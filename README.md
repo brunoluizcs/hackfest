@@ -1,5 +1,9 @@
 # Everis HackFest!
 
+## Pré-requisito
+ - Java JDK
+ - Intellij IDEA ou VSCode
+
 ## Desafios
 
 ### Desafio 1 - Inteiro solitário 
