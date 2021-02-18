@@ -1,0 +1,16 @@
+plugins {
+    id 'java'
+}
+
+group 'everis-hackfest'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+}
