@@ -1,6 +1,6 @@
 public class AloneIntSolution {
 
     public int execute(int[] array) {
-        return 0;
+        return -1;
     }
 }
