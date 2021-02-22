@@ -1,13 +1,14 @@
 import java.util.List;
 
 public class DiagonalDifferenceSolution {
+
     public int execute(List<List<Integer>> args) {
 
         // Declaração e atribuição de valor inicial das variáveis
-        int arraySize = args.size();                                // Variável que recebe o tamanho da matriz.
-        int diagonalPrincipal = 0;                                  // Variável que recebe a soma da diagonal principal da matriz.
-        int diagonalSecundaria = 0;                                 // Variável que recebe a soma da diagonal secundaria da matriz.
-        int diagonalSoma = 0;                                       // Variável que recebe a diferença entre a diagonal principal x diagonal secundaria.
+        int arraySize = args.size();                                // Variável que registra o tamanho da matriz.
+        int diagonalPrincipal = 0;                                  // Variável que registra a soma da diagonal principal da matriz.
+        int diagonalSecundaria = 0;                                 // Variável que registra a soma da diagonal secundaria da matriz.
+        int diagonalSoma = 0;                                       // Variável que registra a diferença entre a diagonal principal x diagonal secundaria.
         int iColuna = 0;                                            // Variável auxiliar que irá percorrer a matriz.
 
         // Declaração e atribuição de valor da matriz principal.
@@ -33,7 +34,11 @@ public class DiagonalDifferenceSolution {
         }
 
         // Cálculo da diferença entre as 2 diagonais superiores.
-        diagonalSoma = diagonalSecundaria - diagonalPrincipal;
+        if(diagonalSecundaria >= diagonalPrincipal){
+            diagonalSoma = ((diagonalSecundaria) - (diagonalPrincipal));
+        }else{
+            diagonalSoma = ((diagonalPrincipal) - (diagonalSecundaria));
+        }
 
         // Retorno do resultado.
         return diagonalSoma;
