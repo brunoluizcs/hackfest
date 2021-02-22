@@ -12,6 +12,7 @@ public class AloneIntSolution {
         };
 
         return Arrays.stream(array)
+                .distinct()
                 .filter(uniqueNumberCount::test)
                 .sum();
     }
